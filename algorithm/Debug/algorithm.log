@@ -1,21 +1,23 @@
-﻿生成启动时间为 2017/7/17 14:05:26。
-     1>项目“E:\qtz算法题目\algorithm\algorithm\algorithm.vcxproj”在节点 2 上(Build 个目标)。
+﻿生成启动时间为 2017/7/18 20:29:47。
+     1>项目“E:\qtz算法题目\git\algorithm\algorithm\algorithm.vcxproj”在节点 2 上(Build 个目标)。
      1>ClCompile:
          D:\Vs2012\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt "17-07.cpp"
          17-07.cpp
-     1>e:\qtz算法题目\algorithm\algorithm\17-07.cpp(12): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\qtz算法题目\git\algorithm\algorithm\17-07.cpp(15): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\vs2012\vc\include\stdio.h(290) : 参见“scanf”的声明
-     1>e:\qtz算法题目\algorithm\algorithm\17-07.cpp(14): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\qtz算法题目\git\algorithm\algorithm\17-07.cpp(27): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\vs2012\vc\include\stdio.h(290) : 参见“scanf”的声明
-     1>e:\qtz算法题目\algorithm\algorithm\17-07.cpp(26): warning C4018: “<”: 有符号/无符号不匹配
-     1>e:\qtz算法题目\algorithm\algorithm\17-07.cpp(28): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+     1>e:\qtz算法题目\git\algorithm\algorithm\17-07.cpp(30): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  d:\vs2012\vc\include\stdio.h(290) : 参见“scanf”的声明
-     1>e:\qtz算法题目\algorithm\algorithm\17-07.cpp(30): warning C4018: “<”: 有符号/无符号不匹配
+     1>e:\qtz算法题目\git\algorithm\algorithm\17-07.cpp(38): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2012\vc\include\stdio.h(290) : 参见“scanf”的声明
+     1>e:\qtz算法题目\git\algorithm\algorithm\17-07.cpp(39): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\vs2012\vc\include\stdio.h(290) : 参见“scanf”的声明
        Link:
-         D:\Vs2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\qtz算法题目\algorithm\Debug\algorithm.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\qtz算法题目\algorithm\Debug\algorithm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\qtz算法题目\algorithm\Debug\algorithm.lib" /MACHINE:X86 "Debug\17-07.obj"
-         algorithm.vcxproj -> E:\qtz算法题目\algorithm\Debug\algorithm.exe
-     1>已完成生成项目“E:\qtz算法题目\algorithm\algorithm\algorithm.vcxproj”(Build 个目标)的操作。
+         D:\Vs2012\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\qtz算法题目\git\algorithm\Debug\algorithm.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\qtz算法题目\git\algorithm\Debug\algorithm.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\qtz算法题目\git\algorithm\Debug\algorithm.lib" /MACHINE:X86 "Debug\17-07.obj"
+         algorithm.vcxproj -> E:\qtz算法题目\git\algorithm\Debug\algorithm.exe
+     1>已完成生成项目“E:\qtz算法题目\git\algorithm\algorithm\algorithm.vcxproj”(Build 个目标)的操作。
 
 生成成功。
 
-已用时间 00:00:01.14
+已用时间 00:00:01.56
