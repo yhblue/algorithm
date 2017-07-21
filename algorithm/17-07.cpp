@@ -1,22 +1,22 @@
 #include<stdio.h>
 #include<malloc.h>
-#include<iostream>
+#include<stdlib.h>
+#include<string.h>
 
-
-void Print_Arry(int *array,int arr_num);
-void OutPut_Result(int *ret,int length);
+void Print_Arry(const int *array,int arr_num);
+void OutPut_Result(const int *ret,int length);
 int Count_InverseNumber(const int *arr,int length);
 
 int main(void)
 {
-  int arr_num = 0; //数组多少个元素
+  int arr_num = 0;            //数组多少个元素
   int mod_times = 0;        //修改的次数     
   int tmp = 0;             //临时存储数组中元素
   int *array = NULL;
   int *ret = NULL;
 
   scanf("%d",&arr_num);
-  printf("arr_num = %d\n",arr_num);
+  //printf("arr_num = %d\n",arr_num);
 
   array = (int*)malloc(sizeof(int)*arr_num);
   ret = (int*)malloc(sizeof(int)*mod_times);     //存储返回的结果
@@ -33,7 +33,7 @@ int main(void)
   }
 
   scanf("%d",&mod_times);
-  printf("mod_times = %d\n",mod_times);
+  //printf("mod_times = %d\n",mod_times);
 
   for(int i=0;i<mod_times;i++)//修改数组的内容
   {
@@ -47,30 +47,32 @@ int main(void)
 		  return -1;
 
 	  array[x_th-1] = mod_data;
-      Print_Arry(array,arr_num);
+      //Print_Arry(array,arr_num);
 	  ret[i] = Count_InverseNumber(array,arr_num);
 	  
   }
 
   OutPut_Result(ret,mod_times); 
-  system("pause");
+  free(array);
+  free(ret);
+  //system("pause");
 }
 
-void Print_Arry(int *array,int mod_times)
+void Print_Arry(const int *array,int arr_num)
 {
   printf("\n");
-  for(int i=0;i<mod_times;i++)
+  for(int i=0;i<arr_num;i++)
   {
      printf("%d ",array[i]);
   }   
   printf("\n");
 }
 
-void OutPut_Result(int *ret,int length)
+void OutPut_Result(const int *ret,int length)
 {
 	if(ret == NULL)
 	   return;
-	printf("output the result!\n");
+//	printf("output the result!\n");
 	for(int i=0; i<length; i++)
 	  printf("%d\n",ret[i]);
 }
