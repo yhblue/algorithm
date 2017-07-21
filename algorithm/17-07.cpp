@@ -4,6 +4,8 @@
 
 
 void Print_Arry(int *array,int arr_num);
+void OutPut_Result(int *ret,int length);
+int Count_InverseNumber(const int *arr,int length);
 
 int main(void)
 {
@@ -11,16 +13,19 @@ int main(void)
   int mod_times = 0;        //修改的次数     
   int tmp = 0;             //临时存储数组中元素
   int *array = NULL;
+  int *ret = NULL;
 
   scanf("%d",&arr_num);
   printf("arr_num = %d\n",arr_num);
 
   array = (int*)malloc(sizeof(int)*arr_num);
-  
+  ret = (int*)malloc(sizeof(int)*mod_times);     //存储返回的结果
+
   if (array == NULL)
 	  return -1;
 
   memset(array,0,sizeof(int)*arr_num);
+  memset(ret,0,sizeof(int)*mod_times);
 
   for(int i=0;i<arr_num;i++)
   {
@@ -40,21 +45,53 @@ int main(void)
 
 	  if(x_th > arr_num) //大于数组中有的元素个数
 		  return -1;
+
 	  array[x_th-1] = mod_data;
+      Print_Arry(array,arr_num);
+	  ret[i] = Count_InverseNumber(array,arr_num);
 	  
-	  Print_Arry(array,arr_num);
   }
-   
+
+  OutPut_Result(ret,mod_times); 
   system("pause");
 }
 
-void Print_Arry(int *array,int arr_num)
+void Print_Arry(int *array,int mod_times)
 {
   printf("\n");
-  for(int i=0;i<arr_num;i++)
+  for(int i=0;i<mod_times;i++)
   {
      printf("%d ",array[i]);
   }   
   printf("\n");
 }
 
+void OutPut_Result(int *ret,int length)
+{
+	if(ret == NULL)
+	   return;
+	printf("output the result!\n");
+	for(int i=0; i<length; i++)
+	  printf("%d\n",ret[i]);
+}
+
+//arr：数组首地址
+//length：数组元素个数
+int Count_InverseNumber(const int *arr,int length)
+{
+	int ret_num = 0;
+
+	if (arr == NULL)
+		return -1;
+	
+    for(int i=0;i<(length-1);i++) //i决定第一个元素去和剩下元素比较
+	{
+		for(int j=1;j<(length-i);j++)
+		{
+		   if(arr[i] > arr[i+j])
+			   ret_num++;
+		}
+		
+	}
+	return ret_num;
+}
